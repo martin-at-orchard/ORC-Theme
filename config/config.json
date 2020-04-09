@@ -1,1 +1,8 @@
-{}
+{
+	"theme": {
+		"slug": "orc-theme",
+		"name": "Orchard Recovery Center Theme",
+		"author": "Martin Wedepohl",
+		"PHPNamespace": "WP_Rig\\WP_Rig"
+	}
+}
