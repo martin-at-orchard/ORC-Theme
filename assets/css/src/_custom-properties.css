@@ -14,6 +14,22 @@
 	--content-width: 45rem;
 	--dropdown-symbol-width: 0.7em;
 
+	/**
+	 * ORC Colors
+	 *
+	 * Green on logo: #66703a
+	 *
+	 * Dark sand:     #9da173 - Foreground with black background
+	 * Sand:          #cecca1 - Foreground with black background
+	 * Purple:        #98b2dc - Foreground with black background
+	 * Blue:          #6fccdd - Foreground with black background
+	 * Green:         #29bbb2 - Foreground with black background
+	 *
+	 * White:         #ffffff
+	 * Black:         #000000 - Foreground with #9da173, #cecca1, #98b2dc, #6fccdd, #29bbb2, #ffffff background
+	 * 
+	 */
+
 	/* Custom editor colors */
 	--color-theme-primary: #e36d60;
 	--color-theme-secondary: #41848f;
@@ -35,6 +51,13 @@
 	--color-quote-citation: #6c7781;
 
 	/* Custom editor font sizes */
+	/**
+	 * Using 20px global font size
+	 * small   - 0.8em
+	 * regular - 1.25em
+	 * large   - 1.8em
+	 * larger  - 2.4em
+	 */
 	--font-size-small: calc(16 / var(--global-font-size) * 1rem);
 	--font-size-regular: calc(var(--global-font-size) / 16 * 1rem);
 	--font-size-large: calc(36 / var(--global-font-size) * 1rem);
