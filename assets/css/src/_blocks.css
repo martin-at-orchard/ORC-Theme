@@ -61,6 +61,10 @@
 	border-left-color: var(--color-quote-citation);
 }
 
+.wp-block-quote cite {
+	font-style: italic;
+}
+
 .wp-block-cover {
 	display: flex;
 	align-items: center;
