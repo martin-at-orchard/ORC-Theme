@@ -25,6 +25,7 @@
 @import "_typography.css";
 @import "_elements.css";
 @import "_links.css";
+@import "_sticky.css";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -76,6 +77,10 @@
 	max-width: 100%;
 }
 
+.site-main {
+	position: relative;
+}
+
 @media (--sidebar-query) {
 
 	.has-sidebar .site {
@@ -87,12 +92,15 @@
 	}
 
 	.site-header {
-		grid-column: span 2;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.site-main {
 		grid-column: 1;
 		min-width: 0;
+		position: relative;
 	}
 
 	.primary-sidebar {
@@ -199,7 +207,8 @@ select {
 --------------------------------------------------------------*/
 
 .site-header {
-	padding-bottom: 1em;
+	padding-bottom: 0;
+	border-bottom: 1px solid #eee;
 }
 
 .header-image {
@@ -218,7 +227,8 @@ select {
 
 .site-branding {
 	text-align: center;
-	padding: 60px 0 1.75em;
+	padding: 10px 0;
+	min-width: 480px;
 }
 
 .site-title {
