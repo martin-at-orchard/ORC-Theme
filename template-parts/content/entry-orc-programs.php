@@ -12,7 +12,7 @@ namespace WP_Rig\WP_Rig;
 <div class="entry-content">
 	<?php
 	the_title( '<h1>', '</h1>', true );
-	$atts = array( 'class' => 'width-100' );
+	$atts = array( 'class' => 'program-img-width' );
 	the_post_thumbnail(	'thumbnail', $atts );
 	the_content(
 		sprintf(
