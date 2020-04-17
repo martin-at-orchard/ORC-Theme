@@ -71,11 +71,13 @@ class Component implements Component_Interface {
 		/**
 		 * Theme options.
 		 */
-		$wp_customize->add_section(
+		$wp_customize->add_panel(
 			'theme_options',
 			[
-				'title'    => __( 'Theme Options', 'wp-rig' ),
-				'priority' => 130, // Before Additional CSS.
+				'capability'  => 'edit_theme_options',
+				'description' => __( 'All the theme options', 'wp-rig' ),
+				'priority'    => 130, // Before Additional CSS.
+				'title'       => __( 'Theme Options', 'wp-rig' ),
 			]
 		);
 	}
