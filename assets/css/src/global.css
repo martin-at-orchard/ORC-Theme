@@ -222,13 +222,26 @@ select {
 
 .custom-logo-link {
 	display: inline-block;
-	margin: 0 auto 1em;
+	margin: 0 auto;
 }
 
 .site-branding {
 	text-align: center;
 	padding: 10px 0;
 	min-width: 480px;
+}
+
+.branding-number {
+	font-size: 1rem;
+	margin: 0;
+}
+
+.branding-number a {
+	text-decoration: none;
+}
+
+.branding-number a:hover {
+	text-decoration: underline;
 }
 
 .site-title {
@@ -393,7 +406,7 @@ select {
 .main-navigation {
 	clear: both;
 	display: block;
-	margin: 0 auto 2em;
+	margin: 0 auto;
 	padding: 0 1em;
 	max-width: var(--content-width);
 	font-family: var(--highlight-font-family);
@@ -577,10 +590,14 @@ select {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	margin: 1em 0 0;
+	margin: 6em 0 1em;
 	padding: 2em 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+}
+
+.admin-bar .site-footer {
+	margin-top: -1em;
 }
 
 .site-info {

@@ -12,6 +12,8 @@ namespace WP_Rig\WP_Rig;
 <div class="site-branding">
 	<?php the_custom_logo(); ?>
 
+	<?php echo do_shortcode( '[orc_contact type="tollfree" icon="true" link="true" suffix="(24 hrs)" class="branding-number"]' ); ?>
+
 	<?php
 	if ( is_front_page() && is_home() ) {
 		?>
