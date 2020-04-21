@@ -208,7 +208,7 @@ select {
 
 .site-header {
 	padding-bottom: 0;
-	border-bottom: 1px solid #eee;
+	border-bottom: var(--orc-border);
 }
 
 .header-image {
@@ -227,13 +227,14 @@ select {
 
 .site-branding {
 	text-align: center;
-	padding: 10px 0;
+	padding: 1em 0;
 	min-width: 480px;
 }
 
 .branding-number {
 	font-size: 1rem;
-	margin: 0;
+	margin: auto 0;
+	display: block;
 }
 
 .branding-number a {
@@ -505,6 +506,7 @@ select {
 		padding-left: 0;
 		padding-right: 0;
 	}
+
 }
 
 .nav-links {

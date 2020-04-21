@@ -11,18 +11,12 @@ use WP_Rig\WP_Rig\Component_Interface;
 use function WP_Rig\WP_Rig\wp_rig;
 use WP_Customize_Manager;
 use function add_action;
-use function add_filter;
 use function is_admin;
 use function get_theme_mod;
-use function apply_filters;
 use function wp_enqueue_script;
 use function get_theme_file_uri;
 use function get_theme_file_path;
 use function wp_script_add_data;
-use function remove_filter;
-use function is_feed;
-use function is_preview;
-use function wp_kses_hair;
 
 /**
  * Class for managing a sticky header.

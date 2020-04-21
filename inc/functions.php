@@ -27,6 +27,7 @@ function wp_rig() : Template_Tags {
 				new Image_Sizes\Component(),
 				new Lazyload\Component(),
 				new Sticky_Header\Component(),
+				new Top_Bar\Component(),
 				new AMP\Component(),
 				new PWA\Component(),
 				new Comments\Component(),

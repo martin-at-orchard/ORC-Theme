@@ -303,6 +303,12 @@ class Component implements Component_Interface, Templating_Component_Interface {
 					return wp_rig()->is_primary_sidebar_active();
 				},
 			],
+			'wp-rig-topbar'    => [
+				'file'             => 'topbar.min.css',
+				'preload_callback' => function() {
+					return wp_rig()->is_topbar_active();
+				},
+			],
 			'wp-rig-front-page' => [
 				'file'             => 'front-page.min.css',
 				'preload_callback' => function() {

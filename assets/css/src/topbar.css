@@ -1,0 +1,92 @@
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+.top-bar {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	align-content: center;
+	justify-items: center;
+	padding: 0 1em;
+	margin-bottom: 0;
+	border-bottom: var(--orc-border);
+}
+
+.top-bar-toll-free  {
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.top-bar-toll-free a {
+	text-decoration: none;
+}
+
+.top-bar-toll-free a:hover {
+	text-decoration: underline;
+}
+
+.top-bar-social span:last-child {
+	border-right: var(--orc-border);
+}
+
+.top-bar-facebook,
+.top-bar-instagram,
+.top-bar-twitter,
+.top-bar-youtube {
+	display: inline-block;
+	min-width: 2em;
+	font-size: 1.5rem;
+	border-left: var(--orc-border);
+	text-align: center;
+}
+
+.top-bar-facebook i {
+	color: var(--color-facebook);
+	background: transparent;
+}
+
+.top-bar-instagram i {
+	color: var(--color-instagram);
+	background: transparent;
+}
+
+.top-bar-twitter i {
+	color: var(--color-twitter);
+	background: transparent;
+}
+
+.top-bar-youtube i {
+	color: var(--color-youtube);
+	background: transparent;
+}
+
+.top-bar-facebook:hover i,
+.top-bar-instagram:hover i,
+.top-bar-twitter:hover i,
+.top-bar-youtube:hover i {
+	animation-name: social_rotate;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes social_rotate {
+	0% {transform: rotate(0deg)}
+	100% {transform: rotate(360deg)}
+}
+
+@media screen and (min-width: 600px) {
+	.top-bar {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	
+	.top-bar-contact {
+		justify-self: start;
+	}
+	
+	.top-bar-social {
+		justify-self: end;
+	}	
+}
