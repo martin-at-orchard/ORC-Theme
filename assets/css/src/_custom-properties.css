@@ -50,6 +50,15 @@
 	--color-quote-border: #000;
 	--color-quote-citation: #6c7781;
 
+	--color-facebook: #3b569d;
+	--color-instagram: #b12bb2;
+	--color-twitter: #1da1f2;
+	--color-youtube: #f00;
+
+	--color-border: #eee;
+
+	--orc-border: 1px solid #eee;
+
 	/* Custom editor font sizes */
 	/**
 	 * Using 20px global font size
