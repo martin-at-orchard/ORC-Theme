@@ -7,12 +7,9 @@
 document.addEventListener( 'DOMContentLoaded', function() {
 
 	let header  = document.getElementById( 'masthead' );
-	let primary = document.getElementById( 'primary' );
 	header.classList.add( 'sticky-header' );
-	primary.classList.add( 'sticky-header-main' );
 	if ( 'true' === sticky_header_data.sticky_mobile ) {
 		header.classList.add( 'stick-mobile' );
-		primary.classList.add( 'sticky-mobile-header-main' );
 	}
 
 } );
