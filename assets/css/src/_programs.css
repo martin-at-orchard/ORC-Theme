@@ -1,0 +1,68 @@
+/*--------------------------------------------------------------
+# ORC Programs
+--------------------------------------------------------------*/
+
+.wp-block-orc-programs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.wp-block-orc-programs.full-align {
+	max-width: 75em;
+}
+
+.wp-block-orc-programs.wide-align {
+	max-width: 60em;
+}
+
+.wp-block-orc-programs.left-align {
+	justify-content: flex-start;
+}
+
+.wp-block-orc-programs.right-align {
+	justify-content: flex-end;
+}
+
+.program {
+	margin: 1em;
+	padding: 1em;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	transition: all 0.5s;
+	max-width: 250px;
+	text-align: center;
+}
+
+.program:hover {
+	box-shadow: inset 0 0 10px 5px #ccc;
+	border: 5px solid transparent !important;
+	cursor: pointer;
+}
+
+.program h3 {
+	margin: 0 auto 1rem;
+}
+
+.excerpt {
+	margin: 1rem auto 1rem;
+	line-height: 1.15;
+}
+
+.program input[type="button"] {
+	font-size: 1.2rem;
+	padding: 1rem;
+	border-radius: 20px;
+	transition: all 0.5s;
+}
+
+.program input[type="button"]:hover {
+	box-shadow: inset 0 0 10px 2px #aaa;
+	font-size: 1.1rem;
+}
+
+.program img {
+	width: 150px;
+	margin: 0 auto;
+}
