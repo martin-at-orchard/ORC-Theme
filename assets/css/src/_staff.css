@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+# ORC Staff
+--------------------------------------------------------------*/
+
+.wp-block-orc-staff {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.wp-block-orc-staff.full-align {
+	max-width: 75em;
+}
+
+.wp-block-orc-staff.wide-align {
+	max-width: 60em;
+}
+
+.wp-block-orc-staff.left-align {
+	justify-content: flex-start;
+}
+
+.wp-block-orc-staff.right-align {
+	justify-content: flex-end;
+}
+
+.staff {
+	padding: 1rem;
+	max-width: 200px;
+	text-align: center;
+}
+
+.staff:hover {
+	cursor: pointer;
+}
+
+.staff h3 {
+	margin: 0 auto 1rem;
+	font-size: 1rem;
+}
+
+.staff .position {
+	font-size: 1rem;
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.staff .qualifications {
+	font-size: 0.8rem;
+	padding: 10px 0;
+}
+
+.staff input[type="button"] {
+	font-size: 1.2rem;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	transition: all 0.5s;
+	background: white;
+	border-color: #eee;
+}
+
+.staff input[type="button"]:hover {
+	box-shadow: inset 0 0 5px 2px #aaa;
+	font-size: 1.1rem;
+}
+
+.staff img {
+	width: 150px;
+	margin: 0 auto;
+	border-radius: 75px;
+}

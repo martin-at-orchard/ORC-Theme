@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+# ORC Staff
+--------------------------------------------------------------*/
+
+.wp-block-orc-testimonials {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.wp-block-orc-testimonials.full-align {
+	max-width: 75em;
+}
+
+.wp-block-orc-testimonials.wide-align {
+	max-width: 60em;
+}
+
+.wp-block-orc-testimonials.left-align {
+	justify-content: flex-start;
+}
+
+.wp-block-orc-testimonials.right-align {
+	justify-content: flex-end;
+}
+
+.testimonial {
+	margin: 1rem;
+	width: 450px;
+}
+
+.testimonial blockquote {
+	border-left: 4px solid #ccc;
+	padding-left: 1em;
+}
+
+.testimonial blockquote cite {
+	display: block;
+}
+
+.testimonial input[type="button"] {
+	display: grid;
+	justify-self: center;
+	font-size: 1.2rem;
+	margin: 1em auto;
+	padding: 0.5em 1em;
+	border-radius: 20px;
+	transition: all 0.5s;
+	background: white;
+	border-color: #eee;
+}
+
+.testimonial input[type="button"]:hover {
+	box-shadow: inset 0 0 5px 2px #aaa;
+	font-size: 1.1rem;
+}
+
+.all-testimonials a:hover {
+	color: white;
+	background: black;
+	transition: all 0.5s;
+}

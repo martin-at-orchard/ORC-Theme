@@ -5,7 +5,7 @@
 .wp-block-orc-programs {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 .wp-block-orc-programs.full-align {
@@ -45,7 +45,7 @@
 	margin: 0 auto 1rem;
 }
 
-.excerpt {
+.program .excerpt {
 	margin: 1rem auto 1rem;
 	line-height: 1.15;
 }
