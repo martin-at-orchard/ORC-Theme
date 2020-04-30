@@ -17,31 +17,32 @@
 	/**
 	 * ORC Colors
 	 *
-	 * Green on logo: #66703a
+	 * Green on logo: #66703a - With white
 	 *
-	 * Dark sand:     #9da173 - Foreground with black background
-	 * Sand:          #cecca1 - Foreground with black background
-	 * Purple:        #98b2dc - Foreground with black background
-	 * Blue:          #6fccdd - Foreground with black background
-	 * Green:         #29bbb2 - Foreground with black background
-	 *
-	 * White:         #ffffff
-	 * Black:         #000000 - Foreground with #9da173, #cecca1, #98b2dc, #6fccdd, #29bbb2, #ffffff background
+	 * Dark green:    #67713a - With white
+	 * Light green:   #9ea174 - With black
+	 * Dark blue:     #3f6bad - With white
+	 * Lighter blue:  #98b2dc - With black
+	 * Light blue:    #70cddd - With black
+
+	 * White:         #ffffff - With #66703a, #67713a, #3f6bad
+	 * Black:         #000000 - With #9ea174, #98b2dc, #70cddd
 	 * 
 	 */
 
 	/* Custom editor colors */
-	--color-theme-primary: #e36d60;
+	--color-theme-primary: #66703a;
 	--color-theme-secondary: #41848f;
-	--color-theme-red: #c0392b;
-	--color-theme-green: #27ae60;
-	--color-theme-blue: #2980b9;
-	--color-theme-yellow: #f1c40f;
-	--color-theme-black: #1c2833;
-	--color-theme-grey: #95a5a6;
-	--color-theme-white: #ecf0f1;
-	--color-custom-daylight: #97c0b7;
-	--color-custom-sun: #eee9d1;
+
+	--color-theme-dark-green: #67713a;
+	--color-theme-light-green: #9ea174;
+	--color-theme-dark-blue: #3f6bad;
+	--color-theme-lighter-blue: #98b2dc;
+	--color-theme-light-blue: #70cddd;
+
+	--color-theme-grey: #cccccc;
+	--color-theme-white: #ffffff;
+	--color-theme-black: #000000;
 
 	--color-link: #0073aa;
 	--color-link-visited: #333;
@@ -62,13 +63,13 @@
 	/* Custom editor font sizes */
 	/**
 	 * Using 20px global font size
-	 * small   - 0.8em
-	 * regular - 1.25em
-	 * large   - 1.8em
-	 * larger  - 2.4em
+	 * small   - 0.8em  (16px)
+	 * regular - 1.25em (25px)
+	 * large   - 1.6em  (32px)
+	 * larger  - 2.0em  (40px)
 	 */
 	--font-size-small: calc(16 / var(--global-font-size) * 1rem);
 	--font-size-regular: calc(var(--global-font-size) / 16 * 1rem);
-	--font-size-large: calc(36 / var(--global-font-size) * 1rem);
-	--font-size-larger: calc(48 / var(--global-font-size) * 1rem);
+	--font-size-large: calc(32 / var(--global-font-size) * 1rem);
+	--font-size-larger: calc(40 / var(--global-font-size) * 1rem);
 }

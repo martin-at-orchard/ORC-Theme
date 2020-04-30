@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+# ORC Staff
+--------------------------------------------------------------*/
+
+.wp-block-group.alignfull.partners-group,
+.wp-block-group.alignwide.partners-group {
+	display: none;
+}
+
+.wp-block-group.alignfull.partners-group {
+	max-width: 75em;
+}
+
+.wp-block-group.alignwide.partners-group {
+	max-width: 60em;
+}
+
+.wp-block-orc-partners.full-align {
+	max-width: 75em;
+}
+
+.wp-block-orc-partners.wide-align {
+	max-width: 60em;
+}
+
+.wp-block-orc-partners.left-align {
+	justify-content: flex-start;
+}
+
+.wp-block-orc-partners.right-align {
+	justify-content: flex-end;
+}
+
+.partner {
+	margin: 1rem;
+	text-align: center;
+}
+
+.partner image {
+	min-width: 160px;
+}
+
+@media only screen and (min-width: 900px) {
+	.wp-block-group.alignfull.partners-group,
+	.wp-block-group.alignwide.partners-group {
+		display: block;
+	}
+	
+	.wp-block-orc-partners {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+}

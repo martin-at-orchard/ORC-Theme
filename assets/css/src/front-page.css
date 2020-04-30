@@ -9,3 +9,109 @@
 @import "_staff.css";
 @import "_admissions.css";
 @import "_testimonials.css";
+@import "_partners.css";
+
+.wp-block-image.cover-orc-logo figcaption,
+.wp-block-image.cover-carf-logo figcaption  {
+	display: none;
+}
+
+.wp-block-button.is-style-outline.cover-watch-video {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2em;
+}
+
+.cover-watch-video a:hover {
+	transition: all 0.5s;
+	color: black;
+	background: white;
+	border-color: white;
+}
+
+.contact-block {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.contact-block a {
+	text-decoration: none;;
+}
+
+.contact-local-block,
+.contact-text-block,
+.contact-email-block,
+.contact-social-block {
+	display: flex;
+	align-items: center;
+	margin-top: 1em;
+}
+
+.contact-local-block a:hover,
+.contact-text-block a:hover,
+.contact-email-block a:hover {
+	text-decoration: underline;
+}
+
+.contact-facebook-link,
+.contact-instagram-link,
+.contact-twitter-link,
+.contact-youtube-link {
+	display: inline-block;
+	text-align: center;
+	width: 3em;
+	height: 3em;
+	padding-top: 0.7em;
+}
+
+.contact-facebook-link a,
+.contact-instagram-link a,
+.contact-twitter-link a,
+.contact-youtube-link a {
+	color: white;
+}
+
+.contact-facebook-link {
+	background-color: var(--color-facebook);
+	color: white;
+}
+
+.contact-instagram-link {
+	background-color: var(--color-instagram);
+	color: white;
+}
+
+.contact-twitter-link {
+	background-color: var(--color-twitter);
+	color: white;
+}
+
+.contact-youtube-link {
+	background-color: var(--color-youtube);
+	color: white;
+}
+
+@media only screen and (min-width: 900px) {
+	.contact-block {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.contact-facebook-link:hover,
+.contact-instagram-link:hover,
+.contact-twitter-link:hover,
+.contact-youtube-link:hover {
+	animation-name: social_grow;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes social_grow {
+	0% {font-size: 100%}
+	100% {font-size: 200%;padding-top: 0.1em;}
+}
+

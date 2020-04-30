@@ -63,6 +63,13 @@
 }
 
 .program img {
-	width: 150px;
-	margin: 0 auto;
+	display: none;
+}
+
+@media only screen and (min-width: 900px) {
+	.program img {
+		display: block;
+		width: 150px;
+		margin: 0 auto;
+	}
 }

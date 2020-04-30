@@ -42,9 +42,33 @@
 	cursor: pointer;
 }
 
-.admission h3:hover {
-	background: black;
+.admission:nth-child(5n+1) h3:hover {
+	background: var(--color-theme-dark-blue);
 	color: white;
+	border-color: black;
+}
+
+.admission:nth-child(5n+2) h3:hover {
+	background: var(--color-theme-lighter-blue);
+	color: black;
+	border-color: black;
+}
+
+.admission:nth-child(5n+3) h3:hover {
+	background: var(--color-theme-light-blue);
+	color: black;
+	border-color: black;
+}
+
+.admission:nth-child(5n+4) h3:hover {
+	background: var(--color-theme-dark-green);
+	color: white;
+	border-color: black;
+}
+
+.admission:nth-child(5n+5) h3:hover {
+	background: var(--color-theme-light-green);
+	color: black;
 	border-color: black;
 }
 

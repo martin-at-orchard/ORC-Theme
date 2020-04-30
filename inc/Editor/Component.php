@@ -64,7 +64,7 @@ class Component implements Component_Interface {
 				[
 					'name'  => __( 'Primary', 'wp-rig' ),
 					'slug'  => 'theme-primary',
-					'color' => '#e36d60',
+					'color' => '##66703a',
 				],
 				[
 					'name'  => __( 'Secondary', 'wp-rig' ),
@@ -72,49 +72,44 @@ class Component implements Component_Interface {
 					'color' => '#41848f',
 				],
 				[
-					'name'  => __( 'Red', 'wp-rig' ),
-					'slug'  => 'theme-red',
-					'color' => '#C0392B',
+					'name'  => __( 'Dark Green', 'wp-rig' ),
+					'slug'  => 'theme-dark-green',
+					'color' => '#67713a',
 				],
 				[
-					'name'  => __( 'Green', 'wp-rig' ),
-					'slug'  => 'theme-green',
-					'color' => '#27AE60',
+					'name'  => __( 'Light Green', 'wp-rig' ),
+					'slug'  => 'theme-light-green',
+					'color' => '#9ea174',
 				],
 				[
-					'name'  => __( 'Blue', 'wp-rig' ),
-					'slug'  => 'theme-blue',
-					'color' => '#2980B9',
+					'name'  => __( 'Dark Blue', 'wp-rig' ),
+					'slug'  => 'theme-dark-blue',
+					'color' => '#3f6bad',
 				],
 				[
-					'name'  => __( 'Yellow', 'wp-rig' ),
-					'slug'  => 'theme-yellow',
-					'color' => '#F1C40F',
+					'name'  => __( 'Lighter Blue', 'wp-rig' ),
+					'slug'  => 'theme-lighter-blue',
+					'color' => '#98b2dc',
 				],
 				[
-					'name'  => __( 'Black', 'wp-rig' ),
-					'slug'  => 'theme-black',
-					'color' => '#1C2833',
+					'name'  => __( 'Light Blue', 'wp-rig' ),
+					'slug'  => 'theme-light-blue',
+					'color' => '#70cddd',
 				],
 				[
 					'name'  => __( 'Grey', 'wp-rig' ),
 					'slug'  => 'theme-grey',
-					'color' => '#95A5A6',
+					'color' => '#cccccc',
 				],
 				[
 					'name'  => __( 'White', 'wp-rig' ),
 					'slug'  => 'theme-white',
-					'color' => '#ECF0F1',
+					'color' => '#ffffff',
 				],
 				[
-					'name'  => __( 'Dusty daylight', 'wp-rig' ),
-					'slug'  => 'custom-daylight',
-					'color' => '#97c0b7',
-				],
-				[
-					'name'  => __( 'Dusty sun', 'wp-rig' ),
-					'slug'  => 'custom-sun',
-					'color' => '#eee9d1',
+					'name'  => __( 'Black', 'wp-rig' ),
+					'slug'  => 'theme-black',
+					'color' => '#000000',
 				],
 			]
 		);
@@ -143,13 +138,13 @@ class Component implements Component_Interface {
 				[
 					'name'      => __( 'Large', 'wp-rig' ),
 					'shortName' => __( 'L', 'wp-rig' ),
-					'size'      => 31,
+					'size'      => 32,
 					'slug'      => 'large',
 				],
 				[
 					'name'      => __( 'Larger', 'wp-rig' ),
 					'shortName' => __( 'XL', 'wp-rig' ),
-					'size'      => 39,
+					'size'      => 40,
 					'slug'      => 'larger',
 				],
 			]
