@@ -26,6 +26,7 @@
 @import "_elements.css";
 @import "_links.css";
 @import "_sticky.css";
+@import "_bottom-bar.css";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -592,10 +593,11 @@ select {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	margin: 6em 0 1em;
+	margin: 3em 0 0 0;
 	padding: 2em 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	background: #f8f8f8;
 }
 
 .admin-bar .site-footer {
@@ -604,6 +606,86 @@ select {
 
 .site-info {
 	text-align: center;
+}
+
+.site-footer .links {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 'left' 'right';
+	justify-items: center;
+	margin-bottom: 2em;
+}
+
+.site-footer .links .contact {
+	grid-area: left;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: .3em;
+	margin-bottom: 1em;
+	justify-items: center;
+}
+
+.site-footer .links .contact a {
+	text-decoration: none;
+}
+
+.site-footer .links .contact a:hover {
+	text-decoration: underline;
+}
+
+.site-footer .links .footer-menu-container {
+	grid-area: right;
+	display: grid;
+	align-items: end;
+}
+
+.site-footer .links .footer-menu-container ul {
+	padding: 0;
+	margin-left: 0;
+}
+
+.site-footer .links .footer-menu-container ul li {
+	list-style-type: "\21d2";
+}
+
+.site-footer .links .footer-menu-container ul li a {
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+.site-footer .links .footer-menu-container ul li a:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (min-width: 900px) {
+	.site-footer .links {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 'left right';
+	}
+
+	.site-footer .links .contact {
+		justify-items: start;
+	}	
+
+	.bottom-bar {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "copyright social";
+	}
+	
+	.bottom-bar .copyright {
+		justify-self: start;
+		margin: 0 0 0 1em;
+	}
+	
+	.bottom-bar .social-links {
+		justify-self: end;
+
+		margin: 0 1em 0 0;
+	}	
 }
 
 /*--------------------------------------------------------------

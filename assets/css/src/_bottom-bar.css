@@ -1,0 +1,63 @@
+.bottom-bar {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "copyright" "social";
+	justify-items: center;
+	font-size: 0.85em;
+}
+
+.bottom-bar .copyright {
+	grid-area: copyright;
+	margin: 0 0 0 0.5em;
+}
+
+.bottom-bar .social-links {
+	grid-area: social;
+	margin: 0 0.5em 0 0;
+}
+
+.bottom-bar-facebook,
+.bottom-bar-instagram,
+.bottom-bar-twitter,
+.bottom-bar-youtube {
+	display: inline-grid;
+	width: 2em;
+	height: 2em;
+	padding: 0;
+	border-radius: 100%;
+	background: #eaeaea;
+	margin: 0 0.5em;
+}
+
+.bottom-bar-facebook a,
+.bottom-bar-instagram a,
+.bottom-bar-twitter a,
+.bottom-bar-youtube a {
+	justify-self: center;
+	align-self: center;
+	color: black;
+}
+
+.bottom-bar-facebook:hover {
+	background: var(--color-facebook);
+}
+
+.bottom-bar-instagram:hover {
+	background: var(--color-instagram);
+}
+
+.bottom-bar-twitter:hover {
+	background: var(--color-twitter);
+}
+
+.bottom-bar-youtube:hover {
+	background: var(--color-youtube);
+}
+
+.bottom-bar-facebook:hover a,
+.bottom-bar-instagram:hover a,
+.bottom-bar-twitter:hover a,
+.bottom-bar-youtube:hover a {
+	color: white;
+}

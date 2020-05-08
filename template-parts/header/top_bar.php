@@ -16,6 +16,7 @@ wp_rig()->print_styles( 'wp-rig-topbar' );
 ?>
 <div class="top-bar">
 	<div class="top-bar-contact">
+		<?php echo do_shortcode( '[orc_contact type="intake" icon="true" link="true" prefix="Email:" class="top-bar-intake"]' ); ?>
 		<?php echo do_shortcode( '[orc_contact type="tollfree" icon="true" link="true" prefix="Toll Free:" suffix="(24hrs)" class="top-bar-toll-free"]' ); ?>
 	</div>
 	<div class="top-bar-social">

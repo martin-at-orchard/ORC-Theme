@@ -6,6 +6,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin: 0 auto;
 }
 
 .wp-block-orc-admissions.full-align {
@@ -22,6 +23,11 @@
 
 .wp-block-orc-admissions.right-align {
 	justify-content: flex-end;
+}
+
+.admissions-block {
+	background: #eeeeee;
+	padding: 1em;
 }
 
 .admission {
@@ -75,4 +81,11 @@
 .admission .excerpt,
 .admission input[type="button"] {
 	display: none;
+}
+
+@media only screen and (min-width: 900px) {
+	.admissions-block p {
+		max-width: 45em;
+		margin: 0 auto;
+	}	
 }

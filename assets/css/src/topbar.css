@@ -13,16 +13,19 @@
 	border-bottom: var(--orc-border);
 }
 
-.top-bar-toll-free  {
+.top-bar-toll-free,
+.top-bar-intake {
 	margin: 0;
-	font-size: 0.9em;
+	font-size: 0.8em;
 }
 
-.top-bar-toll-free a {
+.top-bar-toll-free a,
+.top-bar-intake a {
 	text-decoration: none;
 }
 
-.top-bar-toll-free a:hover {
+.top-bar-toll-free a:hover,
+.top-bar-intake a:hover {
 	text-decoration: underline;
 }
 
