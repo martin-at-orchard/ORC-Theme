@@ -45,7 +45,6 @@ header.entry-header {
 
 .testimonials-block {
 	padding: 4em 0;
-	border-bottom: 1px solid var(--color-border);
 }
 
 
@@ -110,8 +109,14 @@ header.entry-header {
 	padding: 4em 0 ;
 }
 
+.cover-image h2 {
+	font-weight: 300;
+	letter-spacing: 5px;
+}
+
 .partners-group {
-	margin-top: 3em;
+	padding-top: 2em;
+	border-top: 1px solid var(--color-border);
 }
 
 .wp-block-button.vision-button,

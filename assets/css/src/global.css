@@ -29,6 +29,102 @@
 @import "_bottom-bar.css";
 
 /*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+
+@font-face {
+	font-family: MuseoSans;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/museosans_100-webfont.ttf);
+	font-weight: 100;
+}
+@font-face {
+	font-family: MuseoSans;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/museosans_300-webfont.ttf);
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: MuseoSans;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/museosans_500-webfont.ttf);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: MuseoSans;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/museosans_700-webfont.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: MuseoSans;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/museosans_900-webfont.ttf);
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: MuseoSans;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/museosans_100_italic-webfont.ttf);
+	font-weight: 100;
+	font-style: italic;
+}
+@font-face {
+	font-family: MuseoSans;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/museosans_300_italic-webfont.ttf);
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: MuseoSans;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/museosans_500_italic-webfont.ttf);
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: MuseoSans;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/museosans_700_italic-webfont.ttf);
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: MuseoSans;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/museosans_900_italic-webfont.ttf);
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Frutiger;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/FrutigerLTStd-LightCn.otf);
+	font-weight: 100;
+}
+@font-face {
+	font-family: Frutiger;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/FrutigerLTStd-Cn.otf);
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: Frutiger;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/FrutigerLTStd-BoldCn.otf);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: Frutiger;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/FrutigerLTStd-BlackCn.otf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: Frutiger;
+	src: url(http://orc-rig.local/wp-content/themes/orc-dev/assets/fonts/FrutigerLTStd-ExtraBlackCn.otf);
+	font-weight: 900;
+}
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 
@@ -594,7 +690,7 @@ select {
 --------------------------------------------------------------*/
 .site-footer {
 	margin: 3em 0 0 0;
-	padding: 2em 0;
+	padding: 2em 0 0 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	background: #f8f8f8;
@@ -659,6 +755,23 @@ select {
 	text-decoration: underline;
 }
 
+.bottom-bar {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "copyright" "social";
+	padding: 1em 0;
+	background: #eee;
+}
+
+.bottom-bar .copyright {
+	justify-self: center;
+	align-self: center;
+}
+
+.bottom-bar .social-links {
+	justify-self: center;
+}
+
 @media only screen and (min-width: 900px) {
 	.site-footer .links {
 		display: grid;
@@ -683,7 +796,6 @@ select {
 	
 	.bottom-bar .social-links {
 		justify-self: end;
-
 		margin: 0 1em 0 0;
 	}	
 }

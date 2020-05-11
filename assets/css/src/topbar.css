@@ -29,6 +29,16 @@
 	text-decoration: underline;
 }
 
+.top-bar-contact {
+	display: grid;
+	justify-items: center;
+}
+
+.top-bar-social {
+	display: flex;
+	align-items: center;
+}
+
 .top-bar-social span:last-child {
 	border-right: var(--orc-border);
 }
@@ -79,14 +89,15 @@
 	100% {transform: rotate(360deg)}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 783px) {
 	.top-bar {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 2fr 1fr;
 		grid-template-rows: 1fr;
 	}
 	
 	.top-bar-contact {
-		justify-self: start;
+		display: block;
+		justify-self: center;
 	}
 	
 	.top-bar-social {
