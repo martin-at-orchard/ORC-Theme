@@ -73,6 +73,10 @@ class Theme {
 				}
 			)
 		);
+
+		// Remove google fonts since we are using our own custom fonts.
+		add_filter( 'wp_rig_google_fonts', array( $this, 'remove_google_fonts' ) );
+
 	}
 
 	/**
@@ -87,6 +91,19 @@ class Theme {
 				$component->initialize();
 			}
 		);
+	}
+
+	/**
+	 * Remove Google Fonts as they are not used in this theme.
+	 *
+	 * @param array $google_fonts The default fonts for WpRig.
+	 *
+	 * @return array Empty array.
+	 */
+	public function remove_google_fonts( $google_fonts ): array {
+
+		return array();
+
 	}
 
 	/**

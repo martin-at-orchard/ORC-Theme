@@ -40,21 +40,19 @@ header.entry-header {
 }
 
 .admissions-block {
-	padding: 2em 0 4em;
+	padding: 2em 1em 4em;
 }
 
 .testimonials-block {
 	padding: 4em 0;
 }
 
-
 .vision-quote,
 .tour-quote {
 	border-top: none;
 	border-bottom: none;
 	margin: 0 1em;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding: 1em 0;
 }
 
 .tour-quote img {
@@ -76,6 +74,10 @@ header.entry-header {
 	font-size: 1.2em;
 	line-height: 1.2;
 	margin-left: 1em;
+}
+
+.vision-quote blockquote {
+	border-left-color: var(--color-quote);
 }
 
 .vision-quote img {
@@ -161,6 +163,7 @@ header.entry-header {
 	grid-template-columns: 1fr;
 	justify-items: center;
 	align-items: center;
+	margin-top: 1.3em;
 }
 
 .contact-block a {
@@ -173,11 +176,8 @@ header.entry-header {
 .contact-social-block {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	margin-top: 1em;
-	font-size: 110%;
-}
-
-.contact-social-block {
 	font-size: 100%;
 }
 
@@ -208,22 +208,18 @@ header.entry-header {
 
 .social-link-facebook {
 	background-color: var(--color-facebook);
-	color: white;
 }
 
 .social-link-instagram {
 	background-color: var(--color-instagram);
-	color: white;
 }
 
 .social-link-twitter {
 	background-color: var(--color-twitter);
-	color: white;
 }
 
 .social-link-youtube {
 	background-color: var(--color-youtube);
-	color: white;
 }
 
 .social-link-facebook i,

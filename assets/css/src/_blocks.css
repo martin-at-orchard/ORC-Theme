@@ -109,6 +109,10 @@ ul.wp-block-latest-posts.is-grid.alignfull {
 	padding: 0 1.5em;
 }
 
+.wp-block-pullquote {
+	color: var(--color-quote);
+}
+
 /*--------------------------------------------------------------
 # Gallery Block - overrides core styles
 --------------------------------------------------------------*/
