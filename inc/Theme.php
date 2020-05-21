@@ -77,6 +77,9 @@ class Theme {
 		// Remove google fonts since we are using our own custom fonts.
 		add_filter( 'wp_rig_google_fonts', array( $this, 'remove_google_fonts' ) );
 
+		// Load the Javascript code to handle the block clicks
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_block_click' ) );
+
 	}
 
 	/**
@@ -103,6 +106,30 @@ class Theme {
 	public function remove_google_fonts( $google_fonts ): array {
 
 		return array();
+
+	}
+
+	/**
+	 * Load the script to handle the ability to click anywhere in a block and have it follow the link.
+	 *
+	 * This is only loaded on the front page and the staff page.
+	 */
+	public function enqueue_block_click() {
+
+		// This script only needs to be loaded on the front page and the staff page.
+		if ( ! is_front_page() && ! is_page( 'staff' ) ) {
+			return;
+		}
+
+		wp_enqueue_script(
+			'wp-rig-block-click',
+			get_theme_file_uri( '/assets/js/block_click.min.js' ),
+			array(),
+			wp_rig()->get_asset_version( get_theme_file_path( '/assets/js/block_click.min.js' ) ),
+			true
+		);
+		wp_script_add_data( 'wp-rig-block-click', 'defer', true );
+		wp_script_add_data( 'wp-rig-block-click', 'precache', true );
 
 	}
 

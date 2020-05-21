@@ -32,6 +32,8 @@ function wp_rig() : Template_Tags {
 				new PWA\Component(),
 				new Comments\Component(),
 				new Nav_Menus\Component(),
+				new Staff\Component(),
+				new Scroll_To_Top\Component(),
 				new Sidebars\Component(),
 				new Custom_Logo\Component(),
 				new Post_Thumbnails\Component(),

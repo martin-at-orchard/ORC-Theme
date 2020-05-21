@@ -303,9 +303,28 @@ class Component implements Component_Interface, Templating_Component_Interface {
 					return wp_rig()->is_primary_sidebar_active();
 				},
 			],
+			'wp-rig-staff'    => [
+				'file'             => 'staff.min.css',
+				'preload_callback' => function() {
+					$permalink = get_permalink( get_the_ID() );
+					if ( false === strpos( $permalink, 'staff_members' ) ) {
+						return false;
+					}
+					return true;
+				},
+			],
 			'wp-rig-testimonial'    => [
 				'file'             => 'testimonial.min.css',
-				'preload_callback' => '__return_true',
+				'preload_callback' => function() {
+					if ( is_page( 'testimonials' ) ) {
+						return false;
+					}
+					$permalink = get_permalink( get_the_ID() );
+					if ( false === strpos( $permalink, 'testimonials' ) ) {
+						return false;
+					}
+					return true;
+				},
 			],
 			'wp-rig-topbar'    => [
 				'file'             => 'topbar.min.css',
@@ -417,4 +436,5 @@ class Component implements Component_Interface, Templating_Component_Interface {
 
 		return add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
 	}
+
 }

@@ -1,0 +1,98 @@
+/**
+* CSS file for the Staff Page
+*/
+
+@import "_staff.css";
+
+.hidden {
+	display: none;
+}
+
+.department-select {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(1fr);
+}
+
+.department-select button {
+	margin: 0;
+	padding: 1em;
+	font-size: 1rem;
+	border: 1px solid transparent;
+	background: transparent;
+	border-radius: 20px;
+}
+
+.department-select button:hover:not(.active) {
+	border: 1px solid #ccc;
+	background: #ccc;
+	color: white;
+}
+
+.department-select button.active:hover {
+	cursor: default;
+}
+
+button.active {
+	outline-color: transparent;
+	background: #eee;
+}
+
+button:active {
+	outline-color: transparent;
+}
+
+.wp-block-orc-staff.full-align {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+.staff-img {
+	width: 300px;
+	border-radius: 0;
+	margin: 0 auto;
+}
+
+.staff-position {
+	text-align: center;
+	font-size: 1em;
+}
+
+.staff-qualifications {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.staff-content p {
+	max-width: var(--content-width);
+	text-align: center;
+	margin: 1em auto;
+}
+
+.site-main .post-navigation {
+	margin-top: 2em;
+}
+
+.nav-links a {
+	text-decoration: none;
+}
+
+.nav-links a:hover {
+	text-decoration: underline;
+}
+
+@media (--wide-menu-query) {
+	.staff {
+		min-width: 250px;
+	}
+
+	.staff img {
+		width: 250px;
+	}
+
+	.department-select {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+}

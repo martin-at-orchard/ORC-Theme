@@ -25,7 +25,6 @@
 @import "_typography.css";
 @import "_elements.css";
 @import "_links.css";
-@import "_sticky.css";
 @import "_bottom-bar.css";
 
 /*--------------------------------------------------------------
@@ -585,7 +584,6 @@ select {
 .site-main .posts-navigation,
 .site-main .post-navigation,
 .site-main .pagination {
-	border-bottom: 1px solid #111;
 	margin: 0 auto 2em;
 	max-width: var(--content-width);
 	overflow: hidden;

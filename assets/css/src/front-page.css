@@ -15,6 +15,11 @@ header.entry-header {
 	margin-top: -1.5em;
 }
 
+.wp-block-button.is-style-outline.programs {
+	display:flex;
+	justify-content: center;
+}
+
 .programs-block {
 	background-color: var(--color-theme-lighter-blue);
 }

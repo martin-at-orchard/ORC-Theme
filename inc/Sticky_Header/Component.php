@@ -145,6 +145,13 @@ class Component implements Component_Interface {
 	 */
 	public function enqueue() {
 
+		wp_enqueue_style(
+			'wp-rig-sticky-style',
+			get_theme_file_uri( '/assets/css/sticky.min.css' ),
+			[],
+			wp_rig()->get_asset_version( get_theme_file_path( '/assets/css/sticky.min.css' ) )
+		);
+
 		wp_enqueue_script(
 			'wp-rig-sticky-header',
 			get_theme_file_uri( '/assets/js/stickyheader.min.js' ),
@@ -157,7 +164,6 @@ class Component implements Component_Interface {
 		);
 		wp_localize_script( 'wp-rig-sticky-header', 'sticky_header_data', $sticky_header_array );
 		wp_script_add_data( 'wp-rig-sticky-header', 'defer', true );
-		wp_script_add_data( 'wp-rig-sticky-header', 'precache', true );
 
 	}
 
